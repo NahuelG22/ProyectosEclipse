@@ -1,0 +1,11 @@
+18:45:05 **** Rebuild of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Jugador.o "..\\Jugador.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Seleccion.o "..\\Seleccion.c" 
+gcc "-LC:\\Users\\Nahuel A\\Desktop\\ProyectosEclipse\\tp3_windows" -o tp3_windows.exe Controller.o Jugador.o Seleccion.o main.o parser.o -lLinkedList 
+
+18:45:10 Build Finished. 0 errors, 0 warnings. (took 5s.872ms)
+

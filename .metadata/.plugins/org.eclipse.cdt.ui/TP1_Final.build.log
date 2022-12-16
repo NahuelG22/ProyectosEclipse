@@ -1,0 +1,17 @@
+19:44:46 **** Incremental Build of configuration Debug for project TP1_Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP1_Final.o" "..\\src\\TP1_Final.c" 
+..\src\TP1_Final.c: In function 'menuOpciones':
+..\src\TP1_Final.c:42:4: error: a label can only be part of a statement and a declaration is not a statement
+    float km;
+    ^~~~~
+..\src\TP1_Final.c:43:5: error: expected expression before 'float'
+     float y;
+     ^~~~~
+..\src\TP1_Final.c:52:5: error: 'y' undeclared (first use in this function)
+     y=0;
+     ^
+..\src\TP1_Final.c:52:5: note: each undeclared identifier is reported only once for each function it appears in
+
+19:44:47 Build Failed. 3 errors, 0 warnings. (took 453ms)
+

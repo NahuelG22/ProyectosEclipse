@@ -1,0 +1,108 @@
+/*
+ * ArrayPassenger.c
+ *
+ *  Created on: 8 may. 2022
+ *      Author: Nahuel A
+ */
+
+#include "ArrayPassenger.h"
+
+int initPassengers(Passenger* list, int len)
+{
+	int index;
+
+	index=-1;
+
+	for(int i=0; i<len; i++)
+	{
+		if(list[i].isEmpty==1)
+		{
+			index=i;//usar el addPassenger
+			break;
+		}
+	}
+
+	return 0;
+}
+
+int addPassenger(Passenger* list, int len, int id, char name[],char
+lastName[],float price,int typePassenger, char flycode[])
+{
+	Passenger pasajero;
+	printf("Ingrese el id");
+	scanf("%d", &pasajero.id);
+	printf("Ingrese nombre");
+	fflush(stdin);
+	gets(pasajero.name);
+	printf("Ingrese el apellido");
+	fflush(stdin);
+	gets(pasajero.lastName);
+	printf("Ingrese el precio del vuelo");
+	scanf("%f", &pasajero.price);
+	printf("Ingrese el tipo de pasajero: 0 para menores, 1 para mayores");
+	scanf("%d", &pasajero.typePassenger);
+	printf("Ingrese el codigo de vuelo");
+	fflush(stdin);
+	gets(pasajero.flycode);
+	//sacar este lio usando funciones para obtener enteros y strings
+	return -1;
+}
+
+int findPassengerById(Passenger* list, int len,int id)
+{
+	for(int i=0; i<len; i++)
+	{
+		for(int j=i+1; j<len; j++)
+		{
+			if(list[i].id==list[j].id)//list[i].id==
+			{
+
+			}
+		}
+	}
+
+	return NULL;
+}
+
+int removePassenger(Passenger* list, int len, int id)
+{
+	int ID;
+	int remove;
+	remove=-1;//No existe el legajo
+	printf("Ingrese el pasajero a eliminar: ");//mostrar un menu de los pasajeros ingresados
+	scanf("%d", &id);
+
+	for(int i=0; i<len; i++)
+	{
+		if(list[i].isEmpty==1 && list[i].id==ID)
+		{
+			list[i].isEmpty=0;
+			remove=1;
+			break;
+		}
+	}
+	return -1;
+}
+
+int sortPassengers(Passenger* list, int len, int order)//pedir orden- 1: ascendente-0:descendente
+{
+	return 0;
+}
+
+int printPassenger(Passenger* list, int length)
+{
+	return 0;
+}
+
+int sortPassengersByCode(Passenger* list, int len, int order)
+{
+	return 0;
+
+}
+
+int showPassengers(Passenger* list, int len, int order)
+{
+
+
+	return 0;
+}

@@ -1,0 +1,50 @@
+22:43:43 **** Incremental Build of configuration Debug for project PRUEBA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PRUEBA.o" "..\\src\\PRUEBA.c" 
+..\src\PRUEBA.c: In function 'ordenarAlfabeticamente':
+..\src\PRUEBA.c:51:23: warning: passing argument 1 of 'strcmp' makes pointer from integer without a cast [-Wint-conversion]
+             if(strcmp(string[i] , string[j])>0)
+                       ^~~~~~
+In file included from ..\src\PRUEBA.c:13:0:
+c:\mingw\include\string.h:77:38: note: expected 'const char *' but argument is of type 'char'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+                                      ^~~~~~
+..\src\PRUEBA.c:51:35: warning: passing argument 2 of 'strcmp' makes pointer from integer without a cast [-Wint-conversion]
+             if(strcmp(string[i] , string[j])>0)
+                                   ^~~~~~
+In file included from ..\src\PRUEBA.c:13:0:
+c:\mingw\include\string.h:77:38: note: expected 'const char *' but argument is of type 'char'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+                                      ^~~~~~
+..\src\PRUEBA.c:53:29: warning: passing argument 2 of 'strcpy' makes pointer from integer without a cast [-Wint-conversion]
+                 strcpy(aux, string[i]);
+                             ^~~~~~
+In file included from ..\src\PRUEBA.c:13:0:
+c:\mingw\include\string.h:79:40: note: expected 'const char *' but argument is of type 'char'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+..\src\PRUEBA.c:54:24: warning: passing argument 1 of 'strcpy' makes pointer from integer without a cast [-Wint-conversion]
+                 strcpy(string[i], string[j]);
+                        ^~~~~~
+In file included from ..\src\PRUEBA.c:13:0:
+c:\mingw\include\string.h:79:40: note: expected 'char *' but argument is of type 'char'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+..\src\PRUEBA.c:54:35: warning: passing argument 2 of 'strcpy' makes pointer from integer without a cast [-Wint-conversion]
+                 strcpy(string[i], string[j]);
+                                   ^~~~~~
+In file included from ..\src\PRUEBA.c:13:0:
+c:\mingw\include\string.h:79:40: note: expected 'const char *' but argument is of type 'char'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+..\src\PRUEBA.c:55:24: warning: passing argument 1 of 'strcpy' makes pointer from integer without a cast [-Wint-conversion]
+                 strcpy(string[j], aux);
+                        ^~~~~~
+In file included from ..\src\PRUEBA.c:13:0:
+c:\mingw\include\string.h:79:40: note: expected 'char *' but argument is of type 'char'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+gcc -o PRUEBA.exe "src\\PRUEBA.o" 
+
+22:43:45 Build Finished. 0 errors, 6 warnings. (took 1s.418ms)
+

@@ -1,0 +1,199 @@
+10:55:56 **** Incremental Build of configuration Debug for project Ejercicio8-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\productos.o" "..\\src\\productos.c" 
+In file included from ..\src\Productos.h:3:0,
+                 from ..\src\productos.c:1:
+..\src\Inputs.h:35:5: error: conflicting types for 'getNumberInt'
+ int getNumberInt(float * pResultado, char * mensaje, char * mensajeError, float minimo, float maximo, int reintentos);
+     ^~~~~~~~~~~~
+..\src\Inputs.h:32:5: note: previous declaration of 'getNumberInt' was here
+ int getNumberInt(char mensaje[], char mensajeError[], int minimo, int maximo);
+     ^~~~~~~~~~~~
+..\src\productos.c: In function 'PedirDatosProducto':
+..\src\productos.c:39:40: warning: passing argument 1 of 'getNumberInt' from incompatible pointer type [-Wincompatible-pointer-types]
+  unProducto.nacionalidad= getNumberInt("\n1. EEUU\n2. CHINA\n3. OTRO\nIngrese la nacionalidad: ", "Error!!! La nacionalidad ingresada es incorrecta...", 1, 3);
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Productos.h:3:0,
+                 from ..\src\productos.c:1:
+..\src\Inputs.h:35:5: note: expected 'float *' but argument is of type 'char *'
+ int getNumberInt(float * pResultado, char * mensaje, char * mensajeError, float minimo, float maximo, int reintentos);
+     ^~~~~~~~~~~~
+..\src\productos.c:39:154: warning: passing argument 3 of 'getNumberInt' makes pointer from integer without a cast [-Wint-conversion]
+  unProducto.nacionalidad= getNumberInt("\n1. EEUU\n2. CHINA\n3. OTRO\nIngrese la nacionalidad: ", "Error!!! La nacionalidad ingresada es incorrecta...", 1, 3);
+                                                                                                                                                          ^
+In file included from ..\src\Productos.h:3:0,
+                 from ..\src\productos.c:1:
+..\src\Inputs.h:35:5: note: expected 'char *' but argument is of type 'int'
+ int getNumberInt(float * pResultado, char * mensaje, char * mensajeError, float minimo, float maximo, int reintentos);
+     ^~~~~~~~~~~~
+..\src\productos.c:39:27: error: too few arguments to function 'getNumberInt'
+  unProducto.nacionalidad= getNumberInt("\n1. EEUU\n2. CHINA\n3. OTRO\nIngrese la nacionalidad: ", "Error!!! La nacionalidad ingresada es incorrecta...", 1, 3);
+                           ^~~~~~~~~~~~
+In file included from ..\src\Productos.h:3:0,
+                 from ..\src\productos.c:1:
+..\src\Inputs.h:35:5: note: declared here
+ int getNumberInt(float * pResultado, char * mensaje, char * mensajeError, float minimo, float maximo, int reintentos);
+     ^~~~~~~~~~~~
+..\src\productos.c:40:40: warning: passing argument 1 of 'getNumberInt' from incompatible pointer type [-Wincompatible-pointer-types]
+  unProducto.tipoProducto= getNumberInt("\n1. IPHONE\n2. MAC\n3. IPAD\n4. ACCESORIOS\nIngrese el tipo de producto: ", "Error!!! El tipo de producto ingresado es incorrecta...", 1, 4);
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Productos.h:3:0,
+                 from ..\src\productos.c:1:
+..\src\Inputs.h:35:5: note: expected 'float *' but argument is of type 'char *'
+ int getNumberInt(float * pResultado, char * mensaje, char * mensajeError, float minimo, float maximo, int reintentos);
+     ^~~~~~~~~~~~
+..\src\productos.c:40:177: warning: passing argument 3 of 'getNumberInt' makes pointer from integer without a cast [-Wint-conversion]
+  unProducto.tipoProducto= getNumberInt("\n1. IPHONE\n2. MAC\n3. IPAD\n4. ACCESORIOS\nIngrese el tipo de producto: ", "Error!!! El tipo de producto ingresado es incorrecta...", 1, 4);
+                                                                                                                                                                                 ^
+In file included from ..\src\Productos.h:3:0,
+                 from ..\src\productos.c:1:
+..\src\Inputs.h:35:5: note: expected 'char *' but argument is of type 'int'
+ int getNumberInt(float * pResultado, char * mensaje, char * mensajeError, float minimo, float maximo, int reintentos);
+     ^~~~~~~~~~~~
+..\src\productos.c:40:27: error: too few arguments to function 'getNumberInt'
+  unProducto.tipoProducto= getNumberInt("\n1. IPHONE\n2. MAC\n3. IPAD\n4. ACCESORIOS\nIngrese el tipo de producto: ", "Error!!! El tipo de producto ingresado es incorrecta...", 1, 4);
+                           ^~~~~~~~~~~~
+In file included from ..\src\Productos.h:3:0,
+                 from ..\src\productos.c:1:
+..\src\Inputs.h:35:5: note: declared here
+ int getNumberInt(float * pResultado, char * mensaje, char * mensajeError, float minimo, float maximo, int reintentos);
+     ^~~~~~~~~~~~
+..\src\productos.c:41:36: warning: passing argument 1 of 'getNumberFloat' from incompatible pointer type [-Wincompatible-pointer-types]
+  unProducto.precio= getNumberFloat("\nIngrese el precio del producto: ", "Error!!! El precio ingresado es incorrecto...", 1, 100000);
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Productos.h:3:0,
+                 from ..\src\productos.c:1:
+..\src\Inputs.h:34:5: note: expected 'float *' but argument is of type 'char *'
+ int getNumberFloat(float * pResultado, char * mensaje, char * mensajeError, float minimo, float maximo, int reintentos);
+     ^~~~~~~~~~~~~~
+..\src\productos.c:41:123: warning: passing argument 3 of 'getNumberFloat' makes pointer from integer without a cast [-Wint-conversion]
+  unProducto.precio= getNumberFloat("\nIngrese el precio del producto: ", "Error!!! El precio ingresado es incorrecto...", 1, 100000);
+                                                                                                                           ^
+In file included from ..\src\Productos.h:3:0,
+                 from ..\src\productos.c:1:
+..\src\Inputs.h:34:5: note: expected 'char *' but argument is of type 'int'
+ int getNumberFloat(float * pResultado, char * mensaje, char * mensajeError, float minimo, float maximo, int reintentos);
+     ^~~~~~~~~~~~~~
+..\src\productos.c:41:21: error: too few arguments to function 'getNumberFloat'
+  unProducto.precio= getNumberFloat("\nIngrese el precio del producto: ", "Error!!! El precio ingresado es incorrecto...", 1, 100000);
+                     ^~~~~~~~~~~~~~
+In file included from ..\src\Productos.h:3:0,
+                 from ..\src\productos.c:1:
+..\src\Inputs.h:34:5: note: declared here
+ int getNumberFloat(float * pResultado, char * mensaje, char * mensajeError, float minimo, float maximo, int reintentos);
+     ^~~~~~~~~~~~~~
+..\src\productos.c: In function 'ListarUnProducto':
+..\src\productos.c:48:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("%4d | %-20s | %.2f |", unProducto.idProducto, unProducto.descripcion, unProducto.precio);
+  ^~~~~~
+..\src\productos.c:48:2: warning: incompatible implicit declaration of built-in function 'printf'
+..\src\productos.c:48:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+..\src\productos.c: In function 'ListarProductos':
+..\src\productos.c:82:2: warning: incompatible implicit declaration of built-in function 'printf'
+  printf("\n--------------------> LISTA PRODUCTOS <--------------------"
+  ^~~~~~
+..\src\productos.c:82:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+..\src\productos.c: In function 'ModificarUnProducto':
+..\src\productos.c:97:3: warning: incompatible implicit declaration of built-in function 'printf'
+   printf("\nMenu Modificar\n"
+   ^~~~~~
+..\src\productos.c:97:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+..\src\productos.c:103:24: warning: passing argument 1 of 'getNumberInt' from incompatible pointer type [-Wincompatible-pointer-types]
+   opcion= getNumberInt("Ingrese una opcion: ", "\nError!!! La opcion ingresada es incorrecta", 1, 5);
+                        ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Productos.h:3:0,
+                 from ..\src\productos.c:1:
+..\src\Inputs.h:35:5: note: expected 'float *' but argument is of type 'char *'
+ int getNumberInt(float * pResultado, char * mensaje, char * mensajeError, float minimo, float maximo, int reintentos);
+     ^~~~~~~~~~~~
+..\src\productos.c:103:96: warning: passing argument 3 of 'getNumberInt' makes pointer from integer without a cast [-Wint-conversion]
+   opcion= getNumberInt("Ingrese una opcion: ", "\nError!!! La opcion ingresada es incorrecta", 1, 5);
+                                                                                                ^
+In file included from ..\src\Productos.h:3:0,
+                 from ..\src\productos.c:1:
+..\src\Inputs.h:35:5: note: expected 'char *' but argument is of type 'int'
+ int getNumberInt(float * pResultado, char * mensaje, char * mensajeError, float minimo, float maximo, int reintentos);
+     ^~~~~~~~~~~~
+..\src\productos.c:103:11: error: too few arguments to function 'getNumberInt'
+   opcion= getNumberInt("Ingrese una opcion: ", "\nError!!! La opcion ingresada es incorrecta", 1, 5);
+           ^~~~~~~~~~~~
+In file included from ..\src\Productos.h:3:0,
+                 from ..\src\productos.c:1:
+..\src\Inputs.h:35:5: note: declared here
+ int getNumberInt(float * pResultado, char * mensaje, char * mensajeError, float minimo, float maximo, int reintentos);
+     ^~~~~~~~~~~~
+..\src\productos.c:111:48: warning: passing argument 1 of 'getNumberInt' from incompatible pointer type [-Wincompatible-pointer-types]
+     lista[posicion].nacionalidad= getNumberInt("\n1. EEUU\n2. CHINA\n3. OTRO\nIngrese la nacionalidad: ", "Error!!! La nacionalidad ingresada es incorrecta...", 1, 3);
+                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Productos.h:3:0,
+                 from ..\src\productos.c:1:
+..\src\Inputs.h:35:5: note: expected 'float *' but argument is of type 'char *'
+ int getNumberInt(float * pResultado, char * mensaje, char * mensajeError, float minimo, float maximo, int reintentos);
+     ^~~~~~~~~~~~
+..\src\productos.c:111:162: warning: passing argument 3 of 'getNumberInt' makes pointer from integer without a cast [-Wint-conversion]
+     lista[posicion].nacionalidad= getNumberInt("\n1. EEUU\n2. CHINA\n3. OTRO\nIngrese la nacionalidad: ", "Error!!! La nacionalidad ingresada es incorrecta...", 1, 3);
+                                                                                                                                                                  ^
+In file included from ..\src\Productos.h:3:0,
+                 from ..\src\productos.c:1:
+..\src\Inputs.h:35:5: note: expected 'char *' but argument is of type 'int'
+ int getNumberInt(float * pResultado, char * mensaje, char * mensajeError, float minimo, float maximo, int reintentos);
+     ^~~~~~~~~~~~
+..\src\productos.c:111:35: error: too few arguments to function 'getNumberInt'
+     lista[posicion].nacionalidad= getNumberInt("\n1. EEUU\n2. CHINA\n3. OTRO\nIngrese la nacionalidad: ", "Error!!! La nacionalidad ingresada es incorrecta...", 1, 3);
+                                   ^~~~~~~~~~~~
+In file included from ..\src\Productos.h:3:0,
+                 from ..\src\productos.c:1:
+..\src\Inputs.h:35:5: note: declared here
+ int getNumberInt(float * pResultado, char * mensaje, char * mensajeError, float minimo, float maximo, int reintentos);
+     ^~~~~~~~~~~~
+..\src\productos.c:115:48: warning: passing argument 1 of 'getNumberInt' from incompatible pointer type [-Wincompatible-pointer-types]
+     lista[posicion].tipoProducto= getNumberInt("\n1. IPHONE\n2. MAC\n3. IPAD\n4. ACCESORIOS\nIngrese el tipo de producto: ", "Error!!! El tipo de producto ingresado es incorrecta...", 1, 4);
+                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Productos.h:3:0,
+                 from ..\src\productos.c:1:
+..\src\Inputs.h:35:5: note: expected 'float *' but argument is of type 'char *'
+ int getNumberInt(float * pResultado, char * mensaje, char * mensajeError, float minimo, float maximo, int reintentos);
+     ^~~~~~~~~~~~
+..\src\productos.c:115:185: warning: passing argument 3 of 'getNumberInt' makes pointer from integer without a cast [-Wint-conversion]
+     lista[posicion].tipoProducto= getNumberInt("\n1. IPHONE\n2. MAC\n3. IPAD\n4. ACCESORIOS\nIngrese el tipo de producto: ", "Error!!! El tipo de producto ingresado es incorrecta...", 1, 4);
+                                                                                                                                                                                         ^
+In file included from ..\src\Productos.h:3:0,
+                 from ..\src\productos.c:1:
+..\src\Inputs.h:35:5: note: expected 'char *' but argument is of type 'int'
+ int getNumberInt(float * pResultado, char * mensaje, char * mensajeError, float minimo, float maximo, int reintentos);
+     ^~~~~~~~~~~~
+..\src\productos.c:115:35: error: too few arguments to function 'getNumberInt'
+     lista[posicion].tipoProducto= getNumberInt("\n1. IPHONE\n2. MAC\n3. IPAD\n4. ACCESORIOS\nIngrese el tipo de producto: ", "Error!!! El tipo de producto ingresado es incorrecta...", 1, 4);
+                                   ^~~~~~~~~~~~
+In file included from ..\src\Productos.h:3:0,
+                 from ..\src\productos.c:1:
+..\src\Inputs.h:35:5: note: declared here
+ int getNumberInt(float * pResultado, char * mensaje, char * mensajeError, float minimo, float maximo, int reintentos);
+     ^~~~~~~~~~~~
+..\src\productos.c:119:44: warning: passing argument 1 of 'getNumberFloat' from incompatible pointer type [-Wincompatible-pointer-types]
+     lista[posicion].precio= getNumberFloat("\nIngrese el precio del producto: ", "Error!!! El precio ingresado es incorrecto...", 1, 100000);
+                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Productos.h:3:0,
+                 from ..\src\productos.c:1:
+..\src\Inputs.h:34:5: note: expected 'float *' but argument is of type 'char *'
+ int getNumberFloat(float * pResultado, char * mensaje, char * mensajeError, float minimo, float maximo, int reintentos);
+     ^~~~~~~~~~~~~~
+..\src\productos.c:119:131: warning: passing argument 3 of 'getNumberFloat' makes pointer from integer without a cast [-Wint-conversion]
+     lista[posicion].precio= getNumberFloat("\nIngrese el precio del producto: ", "Error!!! El precio ingresado es incorrecto...", 1, 100000);
+                                                                                                                                   ^
+In file included from ..\src\Productos.h:3:0,
+                 from ..\src\productos.c:1:
+..\src\Inputs.h:34:5: note: expected 'char *' but argument is of type 'int'
+ int getNumberFloat(float * pResultado, char * mensaje, char * mensajeError, float minimo, float maximo, int reintentos);
+     ^~~~~~~~~~~~~~
+..\src\productos.c:119:29: error: too few arguments to function 'getNumberFloat'
+     lista[posicion].precio= getNumberFloat("\nIngrese el precio del producto: ", "Error!!! El precio ingresado es incorrecto...", 1, 100000);
+                             ^~~~~~~~~~~~~~
+In file included from ..\src\Productos.h:3:0,
+                 from ..\src\productos.c:1:
+..\src\Inputs.h:34:5: note: declared here
+ int getNumberFloat(float * pResultado, char * mensaje, char * mensajeError, float minimo, float maximo, int reintentos);
+     ^~~~~~~~~~~~~~
+
+10:55:57 Build Failed. 8 errors, 18 warnings. (took 849ms)
+

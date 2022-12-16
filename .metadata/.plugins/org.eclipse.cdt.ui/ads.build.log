@@ -1,0 +1,13 @@
+11:19:03 **** Incremental Build of configuration Debug for project ads ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ads.o" "..\\src\\ads.c" 
+..\src\ads.c: In function 'main':
+..\src\ads.c:19:2: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+  strcpy(nombre,apellido);
+  ^~~~~~
+..\src\ads.c:19:2: warning: incompatible implicit declaration of built-in function 'strcpy'
+..\src\ads.c:19:2: note: include '<string.h>' or provide a declaration of 'strcpy'
+gcc -o ads.exe "src\\ads.o" 
+
+11:19:04 Build Finished. 0 errors, 2 warnings. (took 1s.382ms)
+

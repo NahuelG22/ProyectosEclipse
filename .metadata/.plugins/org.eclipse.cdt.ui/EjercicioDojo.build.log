@@ -1,0 +1,14 @@
+19:09:52 **** Rebuild of configuration Debug for project EjercicioDojo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\EjercicioDojo.o" "..\\src\\EjercicioDojo.c" 
+..\src\EjercicioDojo.c: In function 'PedirEntero':
+..\src\EjercicioDojo.c:90:6: warning: implicit declaration of function 'prinft' [-Wimplicit-function-declaration]
+      prinft("%s", mensaje);
+      ^~~~~~
+gcc -o EjercicioDojo.exe "src\\EjercicioDojo.o" 
+src\EjercicioDojo.o: In function `PedirEntero':
+C:\Users\Nahuel A\Desktop\ProyectosEclipse\EjercicioDojo\Debug/../src/EjercicioDojo.c:90: undefined reference to `prinft'
+collect2.exe: error: ld returned 1 exit status
+
+19:09:54 Build Failed. 1 errors, 1 warnings. (took 1s.684ms)
+

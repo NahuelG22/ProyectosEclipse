@@ -1,0 +1,12 @@
+14:44:35 **** Rebuild of configuration Debug for project PP_Labo1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PP_Labo1.o" "..\\src\\PP_Labo1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mecanicos.o" "..\\src\\mecanicos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\validaciones.o" "..\\src\\validaciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\servicios.o" "..\\src\\servicios.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\nexo.o" "..\\src\\nexo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -o PP_Labo1.exe "src\\PP_Labo1.o" "src\\input.o" "src\\mecanicos.o" "src\\nexo.o" "src\\servicios.o" "src\\validaciones.o" 
+
+14:44:46 Build Finished. 0 errors, 0 warnings. (took 10s.484ms)
+

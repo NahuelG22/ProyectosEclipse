@@ -1,0 +1,28 @@
+01:45:09 **** Rebuild of configuration Debug for project Ejercicio10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\productos.o" "..\\src\\productos.c" 
+..\src\productos.c: In function 'PedirUnProducto':
+..\src\productos.c:18:9: error: expected expression before ')' token
+  switch()
+         ^
+..\src\productos.c:30:10: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'int *' [-Wformat=]
+  scanf("%f", &UnProducto.tipo);
+          ^
+..\src\productos.c: In function 'ModificarAlumno':
+..\src\productos.c:63:2: warning: implicit declaration of function 'MostrarListaDeAlumnos' [-Wimplicit-function-declaration]
+  MostrarListaDeAlumnos(listaProductos[i].idProducto);
+  ^~~~~~~~~~~~~~~~~~~~~
+..\src\productos.c:72:34: error: 'eApple {aka struct <anonymous>}' has no member named 'promedio'; did you mean 'precio'?
+    scanf("%f", &listaProductos[i].promedio);
+                                  ^
+..\src\productos.c: In function 'MostrarProductosMasCaros':
+..\src\productos.c:137:24: error: invalid operands to binary > (have 'eApple {aka struct <anonymous>}' and 'eApple {aka struct <anonymous>}')
+    if(listaProductos[i]>listaProductos[j])
+       ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+..\src\productos.c: In function 'MostrarProductosCaros':
+..\src\productos.c:183:23: error: invalid operands to binary > (have 'eApple {aka struct <anonymous>}' and 'int')
+   if(listaProductos[i]>700)
+      ~~~~~~~~~~~~~~~~~^
+
+01:45:10 Build Failed. 4 errors, 2 warnings. (took 785ms)
+
